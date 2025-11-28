@@ -59,8 +59,8 @@ export const Navbar = () => {
                   <Button onClick={handleLogout} variant="secondary" className="text-sm px-3 py-2">Logout</Button>
                 </div>
               ) : (
-                <NavLink to="/login" className="bg-corporate-blue-600 text-white px-3 py-2 rounded-md text-sm font-medium hover:bg-corporate-blue-700 transition">
-                  Login
+                <NavLink to="/login">
+                  <Button variant="primary" className="px-3 py-2 text-sm">Login</Button>
                 </NavLink>
               )}
             </div>
