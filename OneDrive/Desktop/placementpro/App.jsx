@@ -15,7 +15,7 @@ import { UserRole } from './types';
 function App() {
   return (
     <AppProvider>
-      <div className="min-h-screen bg-gray-100">
+      <div className="min-h-screen bg-gray-100 pt-16"> {/* pad for fixed navbar */}
         <Navbar />
         <main>
           <Routes>

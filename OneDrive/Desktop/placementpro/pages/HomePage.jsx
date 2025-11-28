@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Card } from '../components/ui';
+import { Card, Button } from '../components/ui';
 
 const HomePage = () => {
   return (
@@ -18,9 +18,9 @@ const HomePage = () => {
           </p>
           <div className="mt-8">
             <Link to="/login">
-              <button className="bg-white text-corporate-blue-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition-transform transform hover:scale-105">
+              <Button variant="primary" className="rounded-full py-3 px-8 text-corporate-blue-700 bg-white hover:bg-gray-100 text-lg font-bold shadow-lg transform hover:scale-105">
                 Get Started
-              </button>
+              </Button>
             </Link>
           </div>
         </div>
