@@ -18,3 +18,19 @@ View your app in AI Studio: https://ai.studio/apps/temp/2
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Deploying to Netlify
+
+This project is configured for direct deployment from GitHub to Netlify.
+
+1. Push your repository to GitHub (the `master` branch or any other branch).
+2. In Netlify, choose "New site from Git" and connect your GitHub account.
+3. Select the repository `Placement_Pro` and the branch you want to deploy.
+4. Netlify will use the following build settings (configured in `netlify.toml`):
+
+    - Build command: `npm run build`
+    - Publish directory: `dist`
+
+5. Client-side routing is handled by the SPA redirect. The `_redirects` file is included in `public/` and will be copied to `dist/` during build.
+
+After connecting, Netlify will build and deploy automatically on each push.
